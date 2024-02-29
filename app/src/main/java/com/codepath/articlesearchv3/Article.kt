@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 import android.support.annotation.Keep
 import kotlinx.serialization.SerialName

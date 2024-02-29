@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 import android.os.Bundle
 import android.util.Log
@@ -15,9 +15,9 @@ import com.codepath.asynchttpclient.RequestParams
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.codepath.articlesearch.R.layout
 import okhttp3.Headers
 import org.json.JSONObject
+
 
 // --------------------------------//
 // CHANGE THIS TO BE YOUR API KEY  //
@@ -36,7 +36,7 @@ class BestSellerBooksFragment : Fragment(), OnListFragmentInteractionListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(layout.fragment_best_seller_books_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_best_seller_books_list, container, false)
         val progressBar = view.findViewById<View>(R.id.progress) as ContentLoadingProgressBar
         val recyclerView = view.findViewById<View>(R.id.list) as RecyclerView
         val context = view.context
@@ -59,7 +59,7 @@ class BestSellerBooksFragment : Fragment(), OnListFragmentInteractionListener {
 
         // Using the client, perform the HTTP request
         client[
-                "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json",
+                "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${API_KEY}",
                 params,
                 object : JsonHttpResponseHandler()
                 {

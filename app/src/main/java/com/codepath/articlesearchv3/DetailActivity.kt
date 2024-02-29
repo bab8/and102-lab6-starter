@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 import android.os.Bundle
 import android.widget.ImageView

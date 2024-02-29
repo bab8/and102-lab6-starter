@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 import org.junit.Test
 

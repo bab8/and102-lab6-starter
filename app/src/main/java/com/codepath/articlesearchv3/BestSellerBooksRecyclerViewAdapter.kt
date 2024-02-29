@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.codepath.articlesearch.R.id
-import com.codepath.articlesearch.R.layout
+import com.codepath.articlesearchv3.R.id
 
 /**
  * [RecyclerView.Adapter] that can display a [BestSellerBook] and makes a call to the
@@ -22,7 +21,7 @@ class BestSellerBooksRecyclerViewAdapter(
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(layout.fragment_best_seller_book, parent, false)
+            .inflate(R.layout.fragment_best_seller_book, parent, false)
         return BookViewHolder(view)
     }
 

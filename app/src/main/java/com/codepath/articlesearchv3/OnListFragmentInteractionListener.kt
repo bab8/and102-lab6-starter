@@ -1,4 +1,4 @@
-package com.codepath.articlesearch
+package com.codepath.articlesearchv3
 
 /**
  * This interface is used by the [BestSellerBooksRecyclerViewAdapter] to ensure
